@@ -1,0 +1,36 @@
+.nav{
+    width:100%;
+    height:55px;
+    background-color:blue;
+    display:flex;
+    justify-content:space-between;
+}
+
+.title{
+    font-size:1.5rem;
+    color:white;
+    font-weight:bold;
+}
+
+.cartCount{
+    color:black;
+    font-size:1.2rem;
+    background-color:pink;
+    position:absolute;
+    height:30px;
+    width:30px;
+    text-align:center;
+    border-radius:50%;
+}
+
+.cartContainer{
+    height:55px;
+    width:70px;
+    margin-right:20px;
+    position:relative;
+}
+
+.cartIcon{
+    height:45px;
+    width:45px;
+}
