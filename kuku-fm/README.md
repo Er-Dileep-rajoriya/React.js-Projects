@@ -13,7 +13,7 @@ This is a React.js landing page application featuring an auto slider carousel, i
 
 ## Live Demo
 
-Check out the live hosted version of the application [here](https://66a8575cfdcd54c8ec9bfa09--celadon-druid-305fce.netlify.app/).
+Check out the live hosted version of the application [here](https://66a9103a98502650875d2273--cosmic-chebakia-2a30d9.netlify.app/).
 
 ## GitHub Repository
 
