@@ -10,12 +10,10 @@ function Header() {
         alt="icon"
       />
       <div className="name">
-        <a href="#" style={{ textDecoration: "none" }}>
-          <h3>
-            <span className="span1">KUKU</span>
-            <span className="span2">FM</span>
-          </h3>
-        </a>
+        <h3>
+          <span className="span1">KUKU</span>
+          <span className="span2">FM</span>
+        </h3>
       </div>
 
       <div className="lang">

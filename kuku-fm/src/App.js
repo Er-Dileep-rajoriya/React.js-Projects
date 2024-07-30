@@ -5,10 +5,12 @@ import Header from "./components/Header/Header";
 import MovieCarousel from "./components/Carousel/Carousel";
 import Top10 from "./components/Top10/Top10";
 import SkeletonLoader from "./components/Skeleton/Skeleton";
+import TopPicks from "./components/Top_Picks/TopPicks";
 
 function App() {
   const [ShowData, setShowData] = useState([]);
   const [sliderData, setSliderData] = useState([]);
+  const [topPicks, setTopPicks] = useState([]);
   const [top10, setTop10] = useState([]);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -27,7 +29,9 @@ function App() {
       }
       const result = await response.json();
 
-      const newItems = result.items.filter((_, index) => index >= 4);
+      const newItems = result.items.filter(
+        (_, index) => (index >= 4 && page === 1) || (index >= 1 && page === 2)
+      );
 
       if (newItems.length === 0) {
         setHasMore(false);
@@ -37,6 +41,7 @@ function App() {
         setShowData((prevData) => [...prevData, ...newItems]);
         if (page === 1) {
           setSliderData(result.items[0].banners);
+          setTopPicks(result.items[1].mixed_items);
           setTop10(result.items[3].mixed_content_items);
         }
         setLoading(false);
@@ -84,6 +89,7 @@ function App() {
       ) : (
         <>
           <MovieCarousel sliderData={sliderData} />
+          <TopPicks topPicks={topPicks} />
           <Top10 top10={top10} />
           {ShowData.map((data, index) => {
             if (index === ShowData.length - 1) {
