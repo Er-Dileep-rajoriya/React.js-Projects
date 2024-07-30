@@ -1,0 +1,52 @@
+.top10 {
+  width: 100%;
+  margin: 10px 0px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  overflow: scroll;
+}
+
+.top10 .show {
+  height: 320px;
+}
+
+.top10 .show:hover {
+  cursor: pointer;
+}
+
+.heading {
+  margin-left: 20px;
+  margin-bottom: -36px;
+}
+
+.top10 .show-poster {
+  height: 250px;
+  width: 200px;
+  border-radius: 13px;
+  /* border: 2px solid green; */
+}
+
+.top10 .vip-tag {
+  position: relative;
+  background-color: pink;
+  padding: 3px;
+  width: 40px;
+  top: 39px;
+  left: 77%;
+  text-align: center;
+}
+
+.top10 .non-vip {
+  position: relative;
+  /* background-color: pink; */
+  margin-top: 34px;
+  padding: 3px;
+  width: 40px;
+  top: 60px;
+  left: 77%;
+  text-align: center;
+}

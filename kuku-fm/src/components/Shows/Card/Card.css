@@ -1,0 +1,24 @@
+.card .poster {
+  height: 77%;
+  border-radius: 13px;
+}
+
+.card .title {
+  /* text-align: center; */
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+.card .vip-tag {
+  position: relative;
+  left: 87%;
+  top: 10.6%;
+  background-color: pink;
+  width: 37px;
+  text-align: center;
+  padding: 3px 0px;
+}
+
+.card .non-vip {
+  margin-top: 56px;
+}

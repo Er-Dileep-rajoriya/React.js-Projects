@@ -1,0 +1,53 @@
+.vip-show {
+  width: 100%;
+  margin: 10px 0px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  overflow: scroll;
+}
+
+.vip-show .show {
+  height: 300px;
+}
+
+.vip-show .show:hover {
+  cursor: pointer;
+}
+
+.heading {
+  margin-left: 20px;
+  margin-bottom: -36px;
+  margin-top: 30px;
+}
+
+.vip-show .show-poster {
+  height: 190px;
+  width: 170px;
+  border-radius: 18px;
+  /* border: 2px solid green; */
+}
+
+.vip-show .vip-tag {
+  position: relative;
+  background-color: pink;
+  padding: 3px;
+  width: 40px;
+  top: 45px;
+  left: 77%;
+  text-align: center;
+}
+
+.vip-show .non-vip {
+  position: relative;
+  /* background-color: pink; */
+  margin-top: 20px;
+  padding: 3px;
+  width: 40px;
+  top: 60px;
+  left: 77%;
+  text-align: center;
+}
